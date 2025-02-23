@@ -1,0 +1,642 @@
+/********** Template CSS **********/
+:root {
+  --primary: #3CB815;
+  --secondary: #F65005;
+  --light: #F7F8FC;
+  --dark: #111111;
+}
+
+
+/*** Section Header ***/
+.section-header {
+  position: relative;
+  padding-top: 25px;
+}
+
+.section-header::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+}
+
+.section-header::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 2px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+  left: 0;
+  transform: translateX(0);
+}
+
+
+
+.navbar h1 {
+  margin: 0;
+}
+
+/*con solo esto el nav se coloco arriba y al lado derecho.*/
+.navbar {
+  display: flex;
+  position: relative;
+  color: black;
+  margin-left: 3%;
+}
+
+.carousel-inner h3 {
+  font-size: 100px;
+  /* Tamaño grande y llamativo */
+  font-weight: bold;
+  /* Negrita */
+  color: black;
+  /* Color negro como en la imagen */
+  text-align: left;
+  /* Alineado a la izquierda */
+  margin-bottom: 20px;
+  /* Espacio debajo del título */
+}
+
+/*Coursel*/
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  top: 30%;
+  left: 10%;
+  text-align: left;
+
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn-green,
+.btn-orange {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-green {
+  background-color: #3CB815;
+}
+
+.btn-orange {
+  background-color: #F65005;
+}
+
+/* Estilo de los botones prev y next */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: 10px;
+  background-color: #3CB815;
+
+}
+
+.custom-next {
+  right: 10px;
+  background-color: #3CB815;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #3CB815;
+}
+
+.custom-arrow {
+  font-size: 24px;
+  color: white;
+  /* Color de la flecha */
+  font-weight: bold;
+
+}
+
+/*FIN del coursel */
+
+/* Mejores Frutas Start  */
+.imagen-circular {
+  padding: 80px;
+  width: 600px;
+  /* Ajusta el tamaño según lo necesites */
+  height: 600px;
+  /* Asegura que la imagen sea cuadrada */
+  object-fit: cover;
+  /* Mantiene la proporción sin deformar */
+  border-radius: 50%;
+  /* Hace que la imagen sea circular */
+  display: block;
+  float: left;
+  /* Mueve la imagen a la izquierda */
+}
+
+.mejoresFrutas {
+  display: flex;
+  justify-content: space-between;
+  /* Separa los elementos */
+  align-items: center;
+  width: 100%;
+  /* Asegura que use todo el ancho disponible */
+  max-width: 1200px;
+  /* Ajusta el ancho del contenedor */
+  margin: auto;
+  /* Centra el contenedor en la página */
+  height: 100vh;
+  /* Opcional: Ocupa toda la pantalla */
+}
+
+/* Íconos de check */
+.icon {
+  color: green;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.text_MejoresFrutas {
+  padding-left: 80px;
+  /* Empuja el texto hacia la derecha */
+}
+
+.masInfo {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  background-color: #3CB815;
+}
+
+/* FIN Mejores Frutas Start  */
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  /* Elimina márgenes externos */
+  padding: 60px 20px;
+  /* Espacio superior/inferior y a los lados */
+  background-color: #F7F8FC;
+  /* Fondo gris */
+  box-sizing: border-box;
+}
+
+/* Centra el título y el texto de la sección */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Contenedor de las "features" en formato flex */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que se ajusten en pantallas pequeñas */
+  justify-content: center;
+  /* Centra las tarjetas horizontalmente */
+  gap: 30px;
+  /* Espacio entre cada tarjeta */
+}
+
+/* Tarjeta individual (feature) */
+.feature {
+  background-color: #fff;
+  width: 300px;
+  /* Ajusta el ancho de cada tarjeta */
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  /* Centra el contenido interno */
+  /*    box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+}
+
+/* Imagen dentro de la tarjeta */
+.feature img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Título dentro de la tarjeta */
+.feature h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Texto dentro de la tarjeta */
+.feature p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+
+/* Botón de Más Información */
+.feature a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid #28a745;
+  color: #28a745;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* esto haria que cuando se seleccione se vea de color green 
+.feature a:hover {
+    background: #218838;
+}*/
+
+/**************************************************************************/
+
+/* 2. Contenedor principal de la sección (fondo, espacios, etc.) */
+.contenedor_Productos {
+  width: 100%;
+  /* Ocupar todo el ancho de la pantalla */
+  background-color: #fff;
+  /* Fondo blanco (ajusta si lo deseas) */
+  padding: 60px 20px;
+  /* Espacio interno superior/inferior y laterales */
+  box-sizing: border-box;
+  margin: 0 auto;
+  /* Centrado del contenedor */
+}
+
+/* 3. Encabezado de la sección: título y subtítulo */
+.section-header {
+  text-align: center;
+  /* Centra el título y subtítulo */
+  margin-bottom: 40px;
+  /* Espacio debajo del encabezado */
+}
+
+.section-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 4. Estilos para la lista de pestañas (Frutas, Legumbres, Tubérculos) */
+.contenedor_Productos ul {
+  list-style: none;
+  /* Quita viñetas */
+  display: flex;
+  /* Muestra en fila */
+  justify-content: center;
+  /* Centra horizontalmente */
+  gap: 10px;
+  /* Espacio entre pestañas */
+  padding: 0;
+  margin: 0 0 40px 0;
+  /* Espacio debajo de las pestañas */
+}
+
+.contenedor_Productos ul li {
+  margin: 0;
+}
+
+.contenedor_Productos ul li a {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 1px solid #3CB815;
+  color: #3CB815;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contenedor_Productos ul li a:hover {
+  background-color: #3CB815;
+  /* Fondo verde al pasar el mouse */
+  color: #fff;
+  /* Texto blanco */
+}
+
+/* 5. Contenedor de todos los productos */
+/* Ajusta la jerarquía para seleccionar el bloque donde están las tarjetas */
+.contenedor_Productos>div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que se acomoden en filas */
+  justify-content: center;
+  /* Centra las tarjetas */
+  gap: 30px;
+  /* Espacio entre columnas y filas */
+}
+
+/* 6. Tarjeta individual de producto (cada bloque con imagen, nombre, precio, etc.) */
+.contenedor_Productos>div:last-child>div {
+  background-color: #f9f9f9;
+  /* Fondo gris claro */
+  border: 1px solid #eee;
+  border-radius: 8px;
+  width: 280px;
+  /* Ancho de cada tarjeta */
+  text-align: center;
+  /* Centra su contenido */
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+/* 7. Imagen del producto */
+.contenedor_Productos>div:last-child>div img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* 8. Nombre del producto (etiqueta <a>) y precio (etiqueta <span>) */
+.contenedor_Productos>div:last-child>div a {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contenedor_Productos>div:last-child>div span {
+  display: block;
+  color: #3CB815;
+  /* Precio en verde */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 9. Enlaces "View detail" y "Add to cart" */
+.contenedor_Productos>div:last-child>div small {
+  margin: 0 5px;
+}
+
+.contenedor_Productos>div:last-child>div small a {
+  text-decoration: none;
+  color: #3CB815;
+  font-size: 0.9rem;
+}
+
+.contenedor_Productos>div:last-child>div small a:hover {
+  text-decoration: underline;
+}
+
+/* Agrupa las acciones en un contenedor si no existe uno explícito */
+.contenedor_Productos>div:last-child>div>div>div {
+  /* Este selector apunta al contenedor que envuelve 
+       <small>View detail</small> y <small>Add to cart</small> 
+       Ajusta si tu HTML es diferente. */
+  display: flex;
+  justify-content: center;
+  /* Centra ambos enlaces */
+  gap: 10px;
+  /* Espacio entre ellos */
+}
+
+/* Enlaces de acción (View detail, Add to cart) como botones */
+.contenedor_Productos>div:last-child>div>div>div small a {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  color: #3CB815;
+  border: 1px solid #3CB815;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.contenedor_Productos>div:last-child>div>div>div small a:hover {
+  background-color: #3CB815;
+  /* Fondo verde al hacer hover */
+  color: #fff;
+  /* Texto blanco */
+  text-decoration: none;
+}
+
+
+/******************** Visita nuestras fincas Start***********************/
+
+.visita_finca {
+  background-color: #3CB815;
+  padding: 60px 20px;
+  color: white;
+  height: 300px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.visita_finca h1 {
+  font-size: 40px;
+  color: white;
+}
+
+
+/* 2. Contenedor interno para alinear texto y botón */
+.visita {
+  display: flex;
+  justify-content: space-between;
+  /* Texto a la izquierda, botón a la derecha */
+  align-items: center;
+  /* Centra verticalmente */
+  max-width: 1200px;
+  /* Ajusta el ancho máximo */
+  margin: 0 auto;
+  /* Centra horizontalmente dentro de .visita_finca */
+
+}
+
+.visita_titulo {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  /* Asegura el texto en blanco */
+}
+
+.visita_texto {
+  flex: 0 0 60%;
+  box-sizing: border-box;
+  /* Para que padding y border se incluyan en el 60% */
+}
+
+.visita_descripcion {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  /* Texto en blanco */
+}
+
+/* 5. Contenedor del botón (Ingresar) */
+.visita_ingresar {
+  flex: 0 0 40%;
+  /* Ocupa el 40% del ancho */
+  box-sizing: border-box;
+}
+
+
+
+.visita_ingresar a {
+  display: inline-block;
+  width: 150px;
+  /* Ancho fijo */
+  text-align: center;
+  /* Centra el contenido */
+  background-color: #F65005;
+  color: white;
+  padding: 12px 10px;
+  /* Ajusta el padding horizontal para que el botón sea más estrecho */
+  border-radius: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/***/
+.nuestro_blog > .section_header {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  flex: 0 0 100%;
+}
+
+.nuestro_blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Alinea los items al inicio verticalmente */
+  text-align: center;
+  margin: 25px 25px;
+}
+
+
+.images_nuestroBlog {
+  flex: 0 0 250px;
+  margin: 0 15px; /* Ajusta el gap horizontal (mínimo) */
+  background-color: lightgray;
+}
+
+.image1_nuestroBlog {
+  width: 250px;
+  height: auto;
+}
+
+.images_nuestroBlog a {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*
+.images_nuestroBlog img {
+  width: 250px;  
+  height: auto;  
+  margin: 0;  
+  padding: 0; 
+}
+.images_nuestroBlog {
+  display: flex;             
+  justify-content: center;    
+  background-color: pink;
+  width: 100%;            
+}
+*/
+
+
+/*Footer*/
+.Footer {
+  background-color: #111111;
+}
+
+.Footer_ {
+  display: flex;                /* Activa el modo Flex */
+  justify-content: space-between; /* Separa las columnas horizontalmente */
+  gap: 20px;                    /* Espacio opcional entre columnas */
+  padding: 20px;  
+  align-items: center;
+}
+
+.Footer_text1,
+.Footer_info,
+.Footer_accRapido {
+  flex: 1;   /* Cada columna ocupa el mismo espacio */
+  margin: 0 10px; 
+}
+
+.footer_titulo {
+  color: white;
+  font-weight: bold;
+
+}
+
+.Footer_accRapido a {
+  color: #555;
+  margin-bottom: 5px;      /* Espacio entre enlaces */
+  line-height: 0;
+}
+
+.Footer_accRapido {
+  display: flex;
+  flex-direction: column;  /* Apila los elementos verticalmente */
+  align-items: flex-start; /* Alinea a la izquierda (o center si deseas centrarlos) */
+}
