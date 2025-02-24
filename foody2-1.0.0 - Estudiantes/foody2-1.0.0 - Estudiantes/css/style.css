@@ -55,6 +55,7 @@
   margin-left: 3%;
 }
 
+
 .carousel-inner h3 {
   font-size: 100px;
   /* Tamaño grande y llamativo */
@@ -69,7 +70,6 @@
 }
 
 /*Coursel*/
-
 .carousel-caption {
   position: absolute;
   bottom: 20%;
